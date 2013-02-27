@@ -1,0 +1,7 @@
+#N canvas 216 470 450 300 10;
+#X obj -196 -115 phasor~;
+#X obj -206 -78 dac~;
+#X obj -194 -149 receive osc2;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
