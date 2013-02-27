@@ -1,0 +1,28 @@
+#N canvas -8 34 647 458 10;
+#X obj 40 67 tgl 15 0 empty empty Live/Dead 17 7 0 10 -4034 -1 -1 0
+1;
+#X obj 39 107 vsl 15 128 0 127 0 0 osc_con1 empty empty 0 -9 0 10 -262144
+-1 -1 4300 1;
+#X obj 69 107 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8600 1;
+#X obj 105 105 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 6600 1;
+#X obj 33 258 mtof;
+#X obj 64 258 mtof;
+#X obj 97 259 mtof;
+#X obj 33 289 osc~;
+#X obj 66 289 osc~;
+#X obj 99 289 osc~;
+#X obj 78 372 dac~;
+#X obj -62 321 env~ 16383 8192;
+#X obj 44 321 env~ 16383 8192;
+#X obj 150 322 env~ 16383 8192;
+#X connect 0 0 9 1;
+#X connect 0 0 8 1;
+#X connect 0 0 7 1;
+#X connect 1 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 6 0;
+#X connect 4 0 7 0;
+#X connect 5 0 8 0;
+#X connect 6 0 9 0;
